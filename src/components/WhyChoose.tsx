@@ -88,9 +88,9 @@ export default function WhyChoose() {
             
             {/* Right Button */}
             <div>
-              <button className="bg-blue-900 text-white px-8 py-4 rounded-md font-semibold hover:bg-blue-800 transition-colors duration-200 text-lg">
+              <a href="/contact" className="bg-blue-900 text-white px-8 py-4 rounded-md font-semibold hover:bg-blue-800 transition-colors duration-200 text-lg inline-block">
                 BUILD A QUOTE →
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -108,7 +108,7 @@ function ServiceCard({ icon: IconComponent, title, description, buttonText, isFe
   isFeatured: boolean
 }) {
   return (
-    <div className="relative bg-blue-800 rounded-lg p-8 h-full min-h-[300px] flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-300">
+    <div className="relative bg-blue-900 rounded-lg p-8 h-full min-h-[300px] flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-300">
       {/* Featured Badge */}
       {isFeatured && (
         <div className="absolute top-4 right-4">
@@ -137,9 +137,18 @@ function ServiceCard({ icon: IconComponent, title, description, buttonText, isFe
         </p>
 
         {/* Button */}
-        <button className="bg-orange-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition-colors duration-200 text-sm">
+        <a 
+          href={
+            title === "ALL-IN-ONE MDR SERVICE" ? "/services/mdr-service" :
+            title === "24/7 SOC SUPPORT" ? "/services/soc-support" :
+            title === "SECURITY OPERATIONS PLATFORM" ? "/services/secops-platform" :
+            title === "MDR PRICING AND PACKAGES" ? "/services/pricing-packages" :
+            "#"
+          }
+          className="bg-orange-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition-colors duration-200 text-sm inline-block"
+        >
           {buttonText}
-        </button>
+        </a>
       </div>
     </div>
   )

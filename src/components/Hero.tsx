@@ -23,12 +23,12 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-orange-500 text-white px-10 py-5 rounded-md font-semibold hover:bg-orange-600 transition-all duration-300 flex items-center gap-3 w-fit text-lg transform hover:scale-105 shadow-lg">
+              <a href="/contact" className="bg-orange-500 text-white px-10 py-5 rounded-md font-semibold hover:bg-orange-600 transition-all duration-300 flex items-center gap-3 w-fit text-lg transform hover:scale-105 shadow-lg">
                 BUILD A QUOTE
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
 

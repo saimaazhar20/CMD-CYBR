@@ -30,48 +30,68 @@ export default function Header() {
         }`}>
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
-              <div className="flex flex-col">
+              <a href="/" className="flex flex-col">
                 <span className={`text-4xl font-bold transition-colors duration-700 ${
                   isScrolled ? 'text-gray-900' : 'text-white'
                 }`}>
                   CMD:CYBR
                 </span>
-              </div>
+              </a>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <div className="relative group">
-              <button className={`flex items-center space-x-1 transition-colors duration-700 ${
+              <a href="/what-we-do" className={`flex items-center space-x-1 transition-colors duration-700 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-gray-900' 
                   : 'text-white hover:text-blue-300'
               }`}>
-                <span>About Us</span>
+                <span>What we do</span>
                 <ChevronDown className="w-4 h-4" />
-              </button>
+              </a>
             </div>
             <div className="relative group">
-              <button className={`flex items-center space-x-1 transition-colors duration-700 ${
+              <a href="/how-we-do-it" className={`flex items-center space-x-1 transition-colors duration-700 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-gray-900' 
                   : 'text-white hover:text-blue-300'
               }`}>
-                <span>Solutions</span>
+                <span>How we do it</span>
                 <ChevronDown className="w-4 h-4" />
-              </button>
+              </a>
             </div>
             <div className="relative group">
-              <button className={`flex items-center space-x-1 transition-colors duration-700 ${
+              <a href="/resources" className={`flex items-center space-x-1 transition-colors duration-700 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-gray-900' 
                   : 'text-white hover:text-blue-300'
               }`}>
-                <span>Insights</span>
+                <span>Resources</span>
                 <ChevronDown className="w-4 h-4" />
-              </button>
+              </a>
+            </div>
+            <div className="relative group">
+              <a href="/company" className={`flex items-center space-x-1 transition-colors duration-700 ${
+                isScrolled 
+                  ? 'text-gray-700 hover:text-gray-900' 
+                  : 'text-white hover:text-blue-300'
+              }`}>
+                <span>Company</span>
+                <ChevronDown className="w-4 h-4" />
+              </a>
+            </div>
+            <div className="relative group">
+              <a href="/partners" className={`flex items-center space-x-1 transition-colors duration-700 ${
+                isScrolled 
+                  ? 'text-gray-700 hover:text-gray-900' 
+                  : 'text-white hover:text-blue-300'
+              }`}>
+                <span>Partners</span>
+                <ChevronDown className="w-4 h-4" />
+              </a>
             </div>
           </nav>
           <div className="hidden md:flex items-center">
-            <button className={`flex items-center space-x-2 rounded-full px-6 py-2 transition-all duration-300 ${
+            <a href="/contact" className={`flex items-center space-x-2 rounded-full px-6 py-2 transition-all duration-300 ${
               isScrolled
                 ? 'bg-transparent text-black border-2 border-black hover:bg-gray-100'
                 : 'bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900'
@@ -80,7 +100,7 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
               <span>Contact Us</span>
-            </button>
+            </a>
           </div>
           <div className="md:hidden">
             <button
@@ -102,28 +122,42 @@ export default function Header() {
                 ? 'bg-white shadow-lg' 
                 : 'bg-blue-800'
             }`}>
-              <a href="#" className={`block px-3 py-2 transition-colors duration-700 ${
+              <a href="/what-we-do" className={`block px-3 py-2 transition-colors duration-700 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-gray-900' 
                   : 'text-white hover:text-blue-300'
               }`}>
-                About Us
+                What we do
               </a>
-              <a href="#" className={`block px-3 py-2 transition-colors duration-700 ${
+              <a href="/how-we-do-it" className={`block px-3 py-2 transition-colors duration-700 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-gray-900' 
                   : 'text-white hover:text-blue-300'
               }`}>
-                Solutions
+                How we do it
               </a>
-              <a href="#" className={`block px-3 py-2 transition-colors duration-700 ${
+              <a href="/resources" className={`block px-3 py-2 transition-colors duration-700 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-gray-900' 
                   : 'text-white hover:text-blue-300'
               }`}>
-                Insights
+                Resources
               </a>
-              <a href="#" className={`block px-3 py-2 transition-colors duration-700 ${
+              <a href="/company" className={`block px-3 py-2 transition-colors duration-700 ${
+                isScrolled 
+                  ? 'text-gray-700 hover:text-gray-900' 
+                  : 'text-white hover:text-blue-300'
+              }`}>
+                Company
+              </a>
+              <a href="/partners" className={`block px-3 py-2 transition-colors duration-700 ${
+                isScrolled 
+                  ? 'text-gray-700 hover:text-gray-900' 
+                  : 'text-white hover:text-blue-300'
+              }`}>
+                Partners
+              </a>
+              <a href="/contact" className={`block px-3 py-2 transition-colors duration-700 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-gray-900' 
                   : 'text-white hover:text-blue-300'
