@@ -287,7 +287,7 @@ export default function PricingPackages() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-blue-900 mb-3">Can I change my package later?</h3>
-              <p className="text-gray-600">Yes, you can upgrade or downgrade your package at any time. We'll prorate any changes to your billing.</p>
+              <p className="text-gray-600">Yes, you can upgrade or downgrade your package at any time. We&apos;ll prorate any changes to your billing.</p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6">
@@ -296,7 +296,7 @@ export default function PricingPackages() {
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-blue-900 mb-3">What's included in the pricing?</h3>
+              <h3 className="text-lg font-semibold text-blue-900 mb-3">What&apos;s included in the pricing?</h3>
               <p className="text-gray-600">All packages include 24/7 monitoring, threat detection, incident response, and regular security reporting.</p>
             </div>
 

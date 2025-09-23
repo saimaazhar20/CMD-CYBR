@@ -88,7 +88,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div>
               <p className="text-gray-300 leading-relaxed">
-                CMD:CYBR is one of Australia's leading Cybersecurity consultancies. Employing market-leading talent and with a strong thought leadership contribution to our field, we continue to out-think and out-smart the most innovative and cutting-edge cyber threats of today.
+                CMD:CYBR is one of Australia&apos;s leading Cybersecurity consultancies. Employing market-leading talent and with a strong thought leadership contribution to our field, we continue to out-think and out-smart the most innovative and cutting-edge cyber threats of today.
               </p>
             </div>
             <div>

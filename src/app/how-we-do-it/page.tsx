@@ -51,7 +51,7 @@ export default function HowWeDoIt() {
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Strategy</h3>
               <p className="text-gray-300">
-                Development of a customized security strategy tailored to your organization's specific needs and risk profile.
+                Development of a customized security strategy tailored to your organization&apos;s specific needs and risk profile.
               </p>
             </div>
 
@@ -141,7 +141,7 @@ export default function HowWeDoIt() {
                 Our Unique Approach
               </h2>
               <p className="text-lg text-gray-300 mb-8">
-                We combine human expertise with advanced technology to create a comprehensive security solution that adapts to your organization's unique needs.
+                We combine human expertise with advanced technology to create a comprehensive security solution that adapts to your organization&apos;s unique needs.
               </p>
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -152,7 +152,7 @@ export default function HowWeDoIt() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-2">Proactive Threat Hunting</h3>
-                    <p className="text-gray-300">We don't wait for alerts - we actively hunt for threats before they impact your business.</p>
+                    <p className="text-gray-300">We don&apos;t wait for alerts - we actively hunt for threats before they impact your business.</p>
                   </div>
                 </div>
                 <div className="flex items-start">

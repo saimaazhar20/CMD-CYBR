@@ -205,7 +205,7 @@ export default function MDRService() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-blue-900 mb-4">Custom Dashboards</h3>
-              <p className="text-gray-600">Tailored security dashboards providing visibility into your organization's security posture.</p>
+              <p className="text-gray-600">Tailored security dashboards providing visibility into your organization&apos;s security posture.</p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-8">

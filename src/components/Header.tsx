@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
+import Link from 'next/link'
 import Logo from './Logo'
 
 export default function Header() {
@@ -30,9 +31,9 @@ export default function Header() {
             : 'bg-transparent py-2 px-6'
         }`}>
         <div className="flex justify-between items-center h-16">
-          <a href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Logo isScrolled={isScrolled} />
-          </a>
+          </Link>
           <nav className="hidden md:flex items-center space-x-8">
             <div className="relative group">
               <a href="/what-we-do" className={`flex items-center space-x-1 transition-colors duration-700 ${

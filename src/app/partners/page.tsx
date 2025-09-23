@@ -149,7 +149,7 @@ export default function Partners() {
             Ready to Partner With Us?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto fade-in">
-            Join our growing ecosystem of partners and help organizations worldwide stay secure. Let's build something great together.
+            Join our growing ecosystem of partners and help organizations worldwide stay secure. Let&apos;s build something great together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center slide-up">
             <button className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200 border border-gray-300">

@@ -55,14 +55,14 @@ export default function Hero() {
               CMD:CYBR: THE AUTHORITY IN CYBERSECURITY SOLUTIONS
             </h2>
             <h1 className="text-2xl md:text-4xl font-bold text-white mb-6 leading-tight slide-up">
-              Protect What's Next.<br />
-              Accelerate What's Possible<br />
+              Protect What&apos;s Next.<br />
+              Accelerate What&apos;s Possible<br />
               <span className="text-white pulse-white">
                 with CMD:CYBR.
               </span>
             </h1>
             <p className="text-base text-gray-300 mb-6 max-w-2xl leading-relaxed fade-in">
-              CMD:CYBR's complete cybersecurity solutions provide 24/7 cutting-edge protection and next level security operations to prevent cyber criminals from ever disrupting your business.
+              CMD:CYBR&apos;s complete cybersecurity solutions provide 24/7 cutting-edge protection and next level security operations to prevent cyber criminals from ever disrupting your business.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 slide-up">

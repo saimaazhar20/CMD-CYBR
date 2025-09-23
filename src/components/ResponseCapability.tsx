@@ -12,7 +12,7 @@ export default function ResponseCapability() {
     {
       icon: FaLink,
       title: "Response Coverage", 
-      description: "Get continuous protection across your entire attack surface so you can sleep easy knowing that whenever and wherever a new cyber threat is detected, we'll always respond to protect you."
+      description: "Get continuous protection across your entire attack surface so you can sleep easy knowing that whenever and wherever a new cyber threat is detected, we&apos;ll always respond to protect you."
     },
     {
       icon: FaStopwatch,
@@ -28,14 +28,14 @@ export default function ResponseCapability() {
         {/* Main Title */}
         <div className="text-center mb-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight slide-up">
-            The World's Most Complete Response Capability
+            The World&apos;s Most Complete Response Capability
           </h2>
         </div>
 
         {/* Description */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <p className="text-lg text-gray-300 leading-relaxed fade-in">
-            When it comes to response, it's how we do it that makes all the difference.
+            When it comes to response, it&apos;s how we do it that makes all the difference.
           </p>
         </div>
 

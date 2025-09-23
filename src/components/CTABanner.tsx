@@ -13,7 +13,7 @@ export default function CTABanner() {
           
           {/* Description */}
           <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed fade-in">
-            We're here to help! Submit your information and a CMD:CYBR representative will be in touch to help you build a more resilient security operation today.
+            We&apos;re here to help! Submit your information and a CMD:CYBR representative will be in touch to help you build a more resilient security operation today.
           </p>
           
           {/* CTA Button */}

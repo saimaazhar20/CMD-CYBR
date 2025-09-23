@@ -32,7 +32,7 @@ export default function SOCSupport() {
                 Our 24/7 SOC provides continuous monitoring, threat detection, and incident response around the clock. With unlimited threat hunting and incident handling, your organization is protected every minute of every day.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Our expert security analysts work in shifts to ensure there's never a gap in your security coverage, providing immediate response to threats regardless of when they occur.
+                Our expert security analysts work in shifts to ensure there&apos;s never a gap in your security coverage, providing immediate response to threats regardless of when they occur.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div>

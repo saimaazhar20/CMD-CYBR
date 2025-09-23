@@ -14,7 +14,7 @@ export default function Company() {
               About CMD:CYBR
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed fade-in">
-              Leading the charge in cybersecurity innovation, we're dedicated to protecting organizations from evolving digital threats.
+              Leading the charge in cybersecurity innovation, we&apos;re dedicated to protecting organizations from evolving digital threats.
             </p>
           </div>
         </div>
@@ -48,11 +48,11 @@ export default function Company() {
             <div className="bg-white rounded-lg p-8 text-black slide-in-right float border border-gray-200">
               <h3 className="text-2xl font-bold mb-6">Our Mission</h3>
               <p className="text-gray-600 mb-6">
-                To provide comprehensive, innovative cybersecurity solutions that protect our clients' digital assets and enable them to operate with confidence in today's threat landscape.
+                To provide comprehensive, innovative cybersecurity solutions that protect our clients&apos; digital assets and enable them to operate with confidence in today&apos;s threat landscape.
               </p>
               <h3 className="text-2xl font-bold mb-6">Our Vision</h3>
               <p className="text-gray-600">
-                To be the world's most trusted cybersecurity partner, setting the standard for excellence in threat detection, response, and prevention.
+                To be the world&apos;s most trusted cybersecurity partner, setting the standard for excellence in threat detection, response, and prevention.
               </p>
             </div>
           </div>
