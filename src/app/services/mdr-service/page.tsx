@@ -3,17 +3,17 @@ import Footer from '@/components/Footer'
 
 export default function MDRService() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-black animated-bg">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700">
+      <section className="pt-24 pb-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 slide-up">
               ALL-IN-ONE MDR SERVICE
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed fade-in">
               Comprehensive Multi-Signal Managed Detection and Response with 300+ technology integrations to support your existing investments.
             </p>
           </div>
@@ -21,11 +21,11 @@ export default function MDRService() {
       </section>
 
       {/* Service Overview */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 slide-up">
                 Complete MDR Protection
               </h2>
               <p className="text-lg text-gray-600 mb-6">
@@ -82,10 +82,10 @@ export default function MDRService() {
       <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 slide-up">
               Technology Integrations
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto fade-in">
               We integrate with leading security technologies to provide comprehensive coverage across your entire infrastructure.
             </p>
           </div>
@@ -156,13 +156,13 @@ export default function MDRService() {
       </section>
 
       {/* Service Features */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 slide-up">
               Service Features
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto fade-in">
               Our MDR service includes comprehensive features designed to protect your organization from all angles.
             </p>
           </div>

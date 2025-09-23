@@ -8,20 +8,20 @@ export default function NewsSection() {
   const newsItems = [
     {
       category: "ANNOUNCEMENT",
-      title: "eSentire Unleashes AI-Driven Atlas Nexus Network, Empowering Cybersecurity Partners to Build Differentiated Security Services at Scale",
-      description: "Atlas Nexus Network allows Managed Services Providers and Systems Integrators to license and operate their own dedicated instance of the Atlas XDR Platform.",
+      title: "CMD:CYBR Launches Advanced AI-Driven Security Platform, Empowering Organizations with Next-Generation Cybersecurity Solutions",
+      description: "Our new platform allows organizations to leverage cutting-edge AI technology for comprehensive threat detection and response capabilities.",
       ctaText: "READ NOW →"
     },
     {
       category: "REPORT", 
       title: "The Forrester Wave™: Managed Detection And Response Services In Europe, Q3 2025",
-      description: "Learn why eSentire was recognized as an MDR Leader and customer's favorite in Europe.",
+      description: "Learn why CMD:CYBR was recognized as an MDR Leader and customer's favorite in Europe.",
       ctaText: "DOWNLOAD NOW →"
     },
     {
       category: "REPORT",
       title: "The Forrester Wave™: Managed Detection And Response Services, Q1 2025", 
-      description: "eSentire been recognized as a Strong Performer and a superior choice for mid-market organizations.",
+      description: "CMD:CYBR has been recognized as a Strong Performer and a superior choice for mid-market organizations.",
       ctaText: "DOWNLOAD THE REPORT →"
     }
   ]
@@ -35,12 +35,12 @@ export default function NewsSection() {
   }
 
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-            eSentire In The News
+          <h2 className="text-3xl md:text-4xl font-bold text-white slide-up">
+            CMD:CYBR In The News
           </h2>
         </div>
 
@@ -71,17 +71,17 @@ export default function NewsSection() {
             <div className="flex justify-center gap-4 mt-8">
               <button
                 onClick={prevSlide}
-                className="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-blue-900 transition-colors duration-200"
+                className="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white transition-colors duration-200"
               >
-                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-gray-400 hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
               <button
                 onClick={nextSlide}
-                className="w-10 h-10 rounded-full border-2 border-orange-500 flex items-center justify-center hover:bg-orange-500 transition-colors duration-200"
+                className="w-10 h-10 rounded-full border-2 border-gray-400 flex items-center justify-center hover:border-white transition-colors duration-200"
               >
-                <svg className="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-gray-400 hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -100,7 +100,7 @@ function NewsCard({ category, title, description, ctaText }: {
   ctaText: string
 }) {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 h-full flex flex-col">
+    <div className="bg-white rounded-lg shadow-lg p-6 h-full flex flex-col slide-up border border-gray-200">
       {/* Category */}
       <div className="mb-4">
         <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
@@ -109,12 +109,12 @@ function NewsCard({ category, title, description, ctaText }: {
       </div>
 
       {/* Title */}
-      <h3 className="text-lg font-bold text-blue-900 mb-4 leading-tight flex-grow">
+      <h3 className="text-lg font-bold text-black mb-4 leading-tight flex-grow">
         {title}
       </h3>
 
       {/* Description */}
-      <p className="text-gray-700 mb-6 leading-relaxed">
+      <p className="text-gray-600 mb-6 leading-relaxed">
         {description}
       </p>
 
@@ -122,7 +122,7 @@ function NewsCard({ category, title, description, ctaText }: {
       <div className="mt-auto">
         <a 
           href="#" 
-          className="text-blue-900 font-semibold hover:text-blue-700 transition-colors duration-200 inline-flex items-center gap-2"
+          className="text-black font-semibold hover:text-gray-600 transition-colors duration-200 inline-flex items-center gap-2"
         >
           {ctaText}
         </a>

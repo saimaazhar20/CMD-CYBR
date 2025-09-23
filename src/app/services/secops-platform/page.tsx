@@ -3,17 +3,17 @@ import Footer from '@/components/Footer'
 
 export default function SecOpsPlatform() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-black animated-bg">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700">
+      <section className="pt-24 pb-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 slide-up">
               SECURITY OPERATIONS PLATFORM
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed fade-in">
               Multi-agent Generative AI system embedded across our SecOps platform to scale human expertise and enhance security operations.
             </p>
           </div>

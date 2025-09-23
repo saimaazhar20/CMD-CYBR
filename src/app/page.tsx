@@ -6,12 +6,11 @@ import ThreatHunting from '@/components/ThreatHunting'
 import NewsSection from '@/components/NewsSection'
 import ResponseCapability from '@/components/ResponseCapability'
 import CTABanner from '@/components/CTABanner'
-import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-black animated-bg">
       <Header />
       <Hero />
       <Marquee />
@@ -20,7 +19,6 @@ export default function Home() {
       <NewsSection />
       <ResponseCapability />
       <CTABanner />
-      <FAQ />
       <Footer />
     </div>
   );

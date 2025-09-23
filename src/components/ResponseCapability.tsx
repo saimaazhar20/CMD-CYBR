@@ -22,25 +22,19 @@ export default function ResponseCapability() {
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Small Header */}
-        <div className="text-center mb-6">
-          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
-            GET MORE THAN JUST ALERTS
-          </p>
-        </div>
 
         {/* Main Title */}
         <div className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight slide-up">
             The World's Most Complete Response Capability
           </h2>
         </div>
 
         {/* Description */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-300 leading-relaxed fade-in">
             When it comes to response, it's how we do it that makes all the difference.
           </p>
         </div>
@@ -48,21 +42,21 @@ export default function ResponseCapability() {
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {features.map((feature, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-8 h-full">
+            <div key={index} className="bg-white rounded-lg shadow-lg p-8 h-full slide-up border border-gray-200">
               {/* Icon and Title */}
               <div className="flex items-start gap-4 mb-6">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center pulse-white">
                     <feature.icon className="text-white text-xl" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-blue-900 leading-tight">
+                <h3 className="text-xl font-bold text-black leading-tight">
                   {feature.title}
                 </h3>
               </div>
 
               {/* Description */}
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 {feature.description}
               </p>
             </div>
@@ -73,9 +67,9 @@ export default function ResponseCapability() {
         <div className="text-center">
           <a 
             href="#" 
-            className="text-blue-900 font-semibold hover:text-blue-700 transition-colors duration-200 uppercase tracking-wider"
+            className="text-white font-semibold hover:text-gray-300 transition-colors duration-200 uppercase tracking-wider"
           >
-            LEARN MORE ABOUT ESENTIRE RESPONSE AND REMEDIATION
+            LEARN MORE ABOUT CMD:CYBR RESPONSE AND REMEDIATION
           </a>
         </div>
       </div>

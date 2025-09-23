@@ -1,21 +1,20 @@
 'use client'
 
+import Logo from './Logo'
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-black text-white">
       {/* Main Footer Content */}
       <div className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Footer Card */}
-          <div className="bg-gray-800 rounded-lg p-8 mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="bg-gray-900 rounded-lg p-8 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Company Column */}
               <div>
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">C</span>
-                  </div>
-                  <span className="text-xl font-bold text-white">CMD:CYBR</span>
+                <div className="mb-6">
+                  <Logo isScrolled={true} size="small" className="text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-4">Company</h3>
                 <ul className="space-y-3">
@@ -38,20 +37,10 @@ export default function Footer() {
                   <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Virtual CISO</a></li>
                   <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Digital Forensics & Incident Response</a></li>
                   <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Managed Services</a></li>
-                  <li><a href="#" className="text-orange-500 hover:text-orange-400 transition-colors font-semibold">View All Services</a></li>
+                  <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-semibold">View All Services</a></li>
                 </ul>
               </div>
 
-              {/* Products Column */}
-              <div>
-                <h3 className="text-lg font-bold text-white mb-4">Products</h3>
-                <ul className="space-y-3">
-                  <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Gridware MDR</a></li>
-                  <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Gridware 360</a></li>
-                  <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Gridware Cloud 360</a></li>
-                  <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Incident Response Retainer</a></li>
-                </ul>
-              </div>
 
               {/* Contact Column */}
               <div>
@@ -67,7 +56,7 @@ export default function Footer() {
                 <div className="mb-6">
                   <p className="text-blue-400 font-semibold">T. 1300 211 235</p>
                 </div>
-                <button className="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors duration-200 flex items-center gap-2">
+                <button className="bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-600 transition-colors duration-200 flex items-center gap-2 border border-slate-500">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>

@@ -6,93 +6,42 @@ export default function WhyChoose() {
   const features = [
     {
       icon: FaShieldAlt,
-      title: "ALL-IN-ONE MDR SERVICE",
-      description: "Multi-Signal MDR with 300+ technology integrations to support your existing investments.",
+      title: "CONTINUOUS THREAT EXPOSURE MANAGEMENT",
+      description: "Comprehensive threat exposure management with continuous monitoring and assessment of your security posture.",
       buttonText: "LEARN MORE →",
       isFeatured: true
     },
     {
       icon: FaClock,
-      title: "24/7 SOC SUPPORT", 
-      description: "24/7 SOC-as-a-Service with Unlimited Threat Hunting and Incident Handling.",
+      title: "MDR", 
+      description: "Managed Detection and Response services with 24/7 monitoring and rapid incident response capabilities.",
       buttonText: "LEARN MORE →",
       isFeatured: false
     },
     {
       icon: FaRobot,
-      title: "SECURITY OPERATIONS PLATFORM",
-      description: "Multi-agent Generative AI system embedded across our SecOps platform to scale human expertise.",
+      title: "INCIDENT RESPONSE",
+      description: "Expert incident response services to quickly contain, investigate, and remediate security incidents.",
       buttonText: "LEARN MORE →",
-      isFeatured: false
-    },
-    {
-      icon: FaDollarSign,
-      title: "MDR PRICING AND PACKAGES",
-      description: "We offer three flexible MDR pricing packages that can be customized to your unique needs.",
-      buttonText: "EXPLORE PACKAGES →",
       isFeatured: false
     }
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900">
-            Why 2000+ Organizations Choose eSentire
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white slide-up">
+            Why Organizations Choose CMD:CYBR
           </h2>
         </div>
 
-        {/* Grid Layout - 2 top cards, 2 bottom cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {/* Top Row - 2 cards */}
-          <div className="lg:col-span-2">
-            <ServiceCard {...features[0]} />
-          </div>
-          <div className="lg:col-span-2">
-            <ServiceCard {...features[1]} />
-          </div>
-          
-          {/* Bottom Row - 2 cards */}
-          <div className="lg:col-span-2">
-            <ServiceCard {...features[2]} />
-          </div>
-          <div className="lg:col-span-2">
-            <ServiceCard {...features[3]} />
-          </div>
-        </div>
-
-        {/* Bottom CTA Banner */}
-        <div className="relative bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 rounded-lg overflow-hidden">
-          {/* Diagonal Pattern Overlay */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute inset-0" style={{
-              backgroundImage: `repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 10px,
-                rgba(255,255,255,0.1) 10px,
-                rgba(255,255,255,0.1) 20px
-              )`
-            }}></div>
-          </div>
-          
-          <div className="relative px-8 py-12 flex flex-col lg:flex-row items-center justify-between">
-            {/* Left Text */}
-            <div className="text-center lg:text-left mb-6 lg:mb-0">
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                Experience Next Level eSentire MDR
-              </h3>
-            </div>
-            
-            {/* Right Button */}
-            <div>
-              <a href="/contact" className="bg-blue-900 text-white px-8 py-4 rounded-md font-semibold hover:bg-blue-800 transition-colors duration-200 text-lg inline-block">
-                BUILD A QUOTE →
-              </a>
-            </div>
-          </div>
+        {/* Grid Layout - 3 rectangles */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <ServiceCard {...features[0]} />
+          <ServiceCard {...features[1]} />
+          <ServiceCard {...features[2]} />
         </div>
 
       </div>
@@ -108,11 +57,11 @@ function ServiceCard({ icon: IconComponent, title, description, buttonText, isFe
   isFeatured: boolean
 }) {
   return (
-    <div className="relative bg-blue-900 rounded-lg p-8 h-full min-h-[300px] flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-300">
+    <div className="relative bg-white rounded-lg p-8 h-full min-h-[300px] flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-300 slide-up">
       {/* Featured Badge */}
       {isFeatured && (
         <div className="absolute top-4 right-4">
-          <span className="bg-blue-400 text-blue-900 px-3 py-1 rounded-md text-xs font-bold">
+          <span className="bg-black text-white px-3 py-1 rounded-md text-xs font-bold">
             Start Here
           </span>
         </div>
@@ -121,31 +70,30 @@ function ServiceCard({ icon: IconComponent, title, description, buttonText, isFe
       <div className="relative z-10">
         {/* Icon */}
         <div className="mb-6">
-          <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+          <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center pulse-white">
             <IconComponent className="text-3xl text-white" />
           </div>
         </div>
 
         {/* Title */}
-        <h3 className="text-white text-lg font-bold mb-4 leading-tight uppercase tracking-wide">
+        <h3 className="text-black text-lg font-bold mb-4 leading-tight uppercase tracking-wide">
           {title}
         </h3>
 
         {/* Description */}
-        <p className="text-white text-sm mb-6 leading-relaxed">
+        <p className="text-gray-600 text-sm mb-6 leading-relaxed">
           {description}
         </p>
 
         {/* Button */}
         <a 
           href={
-            title === "ALL-IN-ONE MDR SERVICE" ? "/services/mdr-service" :
-            title === "24/7 SOC SUPPORT" ? "/services/soc-support" :
-            title === "SECURITY OPERATIONS PLATFORM" ? "/services/secops-platform" :
-            title === "MDR PRICING AND PACKAGES" ? "/services/pricing-packages" :
+            title === "CONTINUOUS THREAT EXPOSURE MANAGEMENT" ? "/services/threat-exposure" :
+            title === "MDR" ? "/services/mdr-service" :
+            title === "INCIDENT RESPONSE" ? "/services/incident-response" :
             "#"
           }
-          className="bg-orange-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-600 transition-colors duration-200 text-sm inline-block"
+          className="bg-black text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800 transition-colors duration-200 text-sm inline-block border border-gray-300"
         >
           {buttonText}
         </a>

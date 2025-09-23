@@ -3,17 +3,17 @@ import Footer from '@/components/Footer'
 
 export default function PricingPackages() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-black animated-bg">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700">
+      <section className="pt-24 pb-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 slide-up">
               MDR PRICING AND PACKAGES
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed fade-in">
               Flexible MDR pricing packages that can be customized to your unique needs and security requirements.
             </p>
           </div>
@@ -21,13 +21,13 @@ export default function PricingPackages() {
       </section>
 
       {/* Pricing Overview */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 slide-up">
               Choose Your Security Package
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto fade-in">
               We offer three flexible MDR pricing packages designed to meet the needs of organizations of all sizes and security requirements.
             </p>
           </div>
@@ -227,10 +227,10 @@ export default function PricingPackages() {
       <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 slide-up">
               Add-on Services
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto fade-in">
               Enhance your security package with additional services tailored to your specific needs.
             </p>
           </div>
@@ -273,13 +273,13 @@ export default function PricingPackages() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 slide-up">
               Pricing FAQ
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto fade-in">
               Common questions about our MDR pricing and packages.
             </p>
           </div>
