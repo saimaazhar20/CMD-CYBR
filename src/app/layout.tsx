@@ -15,21 +15,28 @@ export default function RootLayout({
 
   useEffect(() => {
     // Check if user has visited before using sessionStorage
-    const hasVisited = sessionStorage.getItem('hasVisited');
-    
-    if (hasVisited) {
-      // User has visited before, skip loader
-      setIsLoading(false);
-    } else {
-      // First time visitor, show loader
-      setIsLoading(true);
-      const timer = setTimeout(() => {
+    try {
+      const hasVisited = typeof window !== 'undefined' ? sessionStorage.getItem('hasVisited') : null;
+      
+      if (hasVisited) {
+        // User has visited before, skip loader
         setIsLoading(false);
-        // Mark that user has visited
-        sessionStorage.setItem('hasVisited', 'true');
-      }, 3000); // 3 seconds minimum loading time
+      } else {
+        // First time visitor, show loader
+        setIsLoading(true);
+        const timer = setTimeout(() => {
+          setIsLoading(false);
+          // Mark that user has visited
+          if (typeof window !== 'undefined') {
+            sessionStorage.setItem('hasVisited', 'true');
+          }
+        }, 2000); // 2 seconds minimum loading time
 
-      return () => clearTimeout(timer);
+        return () => clearTimeout(timer);
+      }
+    } catch (error) {
+      // Fallback if sessionStorage is not available
+      setIsLoading(false);
     }
     
     setHasCheckedSession(true);
@@ -38,7 +45,14 @@ export default function RootLayout({
   const handleLoaderComplete = () => {
     setIsLoading(false);
     // Mark that user has visited
-    sessionStorage.setItem('hasVisited', 'true');
+    try {
+      if (typeof window !== 'undefined') {
+        sessionStorage.setItem('hasVisited', 'true');
+      }
+    } catch (error) {
+      // Fallback if sessionStorage is not available
+      console.warn('SessionStorage not available');
+    }
   };
 
   // Don't render anything until we've checked the session
