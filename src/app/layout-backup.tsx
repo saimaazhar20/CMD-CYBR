@@ -16,7 +16,7 @@ export default function RootLayout({
   useEffect(() => {
     setIsMounted(true);
     
-    // Simple loading sequence - always show loader briefly
+    // Simple loading sequence
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
