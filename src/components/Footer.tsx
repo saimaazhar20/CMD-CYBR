@@ -1,6 +1,5 @@
 'use client'
 
-import Logo from './Logo'
 
 export default function Footer() {
   return (
@@ -14,7 +13,9 @@ export default function Footer() {
               {/* Company Column */}
               <div>
                 <div className="mb-6">
-                  <Logo isScrolled={true} size="small" className="text-white" />
+                  <span className="text-xl font-bold text-white">
+                    CMD:CYBR
+                  </span>
                 </div>
                 <h3 className="text-lg font-bold text-white mb-4">Company</h3>
                 <ul className="space-y-3">

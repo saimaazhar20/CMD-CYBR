@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import Link from 'next/link'
-import Logo from './Logo'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -32,7 +31,11 @@ export default function Header() {
         }`}>
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
-            <Logo isScrolled={isScrolled} />
+            <span className={`text-2xl font-bold transition-colors duration-700 ${
+              isScrolled ? 'text-black' : 'text-white'
+            }`}>
+              CMD:CYBR
+            </span>
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
             <div className="relative group">
